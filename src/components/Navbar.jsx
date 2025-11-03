@@ -5,29 +5,35 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="navbar">
+    <nav className="navbar sticky-top">
       <div className="nav-container">
         <div className="logo">
-          <img
-            src="src\assets\AICTE_logo.jpeg"
-            alt="AICTE_Logo"
-            className="logo-img"
-          />
+          <a href="https://www.aicte.gov.in/">
+            <img
+              src="src\assets\AICTE_logo.jpeg"
+              alt="AICTE_Logo"
+              className="logo-img"
+            />
+          </a>
           <img
             src="src\assets\DTDCFAC 2025 logo.png"
-            alt="AICTE_Logo"
+            alt="DTDCFAC_Logo"
             className="logo-img"
           />
-          <img
-            src="src\assets\images.png"
-            alt="AICTE_Logo"
-            className="logo-img"
-          />
-          <img
-            src="src\assets\SurTech_Logo.png"
-            alt="AICTE_Logo"
-            className="logo-img"
-          />
+          <a href="https://www.jisgroup.org/">
+            <img
+              src="src\assets\images.png"
+              alt="JIS_Logo"
+              className="logo-img"
+            />
+          </a>
+          <a href="https://www.surtech.edu.in/">
+            <img
+              src="src\assets\SurTech_Logo.png"
+              alt="SurTech_Logo"
+              className="logo-img"
+            />
+          </a>
         </div>
 
         {/* Hamburger icon */}
@@ -40,17 +46,17 @@ const Navbar = () => {
         {/* Nav Links */}
         <ul className={isOpen ? "nav-links open" : "nav-links"}>
           <li>
-            <a href="#home" onClick={() => setIsOpen(false)}>
+            <a href="#about" onClick={() => setIsOpen(false)}>
               About Us
             </a>
           </li>
           <li>
-            <a href="#about" onClick={() => setIsOpen(false)}>
+            <a href="#organizingbody" onClick={() => setIsOpen(false)}>
               Organizing Body
             </a>
           </li>
           <li>
-            <a href="#services" onClick={() => setIsOpen(false)}>
+            <a href="#papersubmission" onClick={() => setIsOpen(false)}>
               Paper Submission
             </a>
           </li>
